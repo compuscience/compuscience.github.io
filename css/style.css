@@ -443,4 +443,14 @@ body {
     .heading:after {
         width: 60px;
     }
+    .about-name {
+        font-size: 2rem;
+    }
+    .about-content,
+    .maediary-text-content,
+    .maediary-url,
+    .swiper-content,
+    .swiper-url {
+        font-size: 1.5rem;
+    }
 }
