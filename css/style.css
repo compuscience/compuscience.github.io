@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+body {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+.body-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: url('../images/top.jpg') no-repeat fixed left bottom;
+    background-size: cover;
+    background-color: #555;
+}
+.header-wrapper {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 35%;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-family: "PT Sans", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+
+
+.gnav {
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #444444;
+}
+#global-nav.m_fixed {
+    left: 0;
+    position: fixed;
+    top: 0;
+    opacity: 0.8;
+}
+.gnav a {
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: #5d93d6;
+    text-decoration: none;
+    font-family: "PT Sans", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+.gnav a:hover {
+    background-color: #5d93d6;
+    color: #fff;
+}
+.gnav-wrapper {
+    display: inline-block;
+    margin: 10px auto;
+    list-style-type: none;
+}
+.gnav-item {
+    display: inline-block;
+    margin: 0 6px;
+    font-size: 2rem;
+}
+
+
+.about {
+    width: 100%;
+    padding: 35px 0 50px;
+    background-color: #648b9c;
+    color: #fff;
+}
+.about-content {
+    line-height: 2;
+    font-size: 1.8rem;
+    color: #f5f5f5;
+}
+.about-name {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+.heading {
+    position: relative;
+    display: inline-block;
+    margin: 30px auto 40px;
+    padding: 0 140px;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "PT Sans", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+.heading:before, .heading:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 90px;
+    height: 1px;
+    background-color:rgb(255, 255, 255);
+}
+.heading:before {
+    left:0;
+}
+.heading:after {
+    right: 0;
+}
+
+
+.works {
+    width: 100%;
+    padding: 35px 0 50px;
+    background-color: #597C8B;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.maediary-content {
+    position: relative;
+    width: 90%;
+    padding: 5px;
+    margin: 0 auto 40px;
+    background-color: #648b9c;
+}
+.maediary-img {
+    width: 50%;
+    height: 405px;
+    float: left;
+    background: url('../images/maediary.png') no-repeat center top;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+.maediary-text-block {
+    width: 50%;
+    float: right;
+    padding: 0 35px;
+    line-height: 2;
+}
+.maediary-text-title a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    background-color: #4dc0b2;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "PT Sans", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+.maediary-text-title a:hover {
+    background-color: #59cfc1;
+}
+.maediary-text-content {
+    margin-top: 30px;
+    padding-bottom: 50px;
+    color: #f5f5f5;
+    font-size: 1.7rem;
+}
+.maediary-url {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    line-height: 1.5;
+    color: #f5f5f5;
+    font-size: 1.7rem;
+}
+.maediary-url a {
+    color: #4dc0b2;
+}
+.maediary-url a:hover {
+    color: #59cfc1;
+}
+
+
+.swiper-content {
+    position: relative;
+    width: 90%;
+    padding: 5px;
+    margin: 0 auto 40px;
+    background-color: #648b9c;
+}
+.swiper-img {
+    width: 50%;
+    height: 405px;
+    float: left;
+    background: url('../images/work_img.jpg') no-repeat center top;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+.swiper-text-block {
+    width: 50%;
+    float: right;
+    padding: 0 35px;
+    line-height: 2;
+}
+.swiper-text-title {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-family: "PT Sans", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+.swiper-text-content {
+    margin-top: 30px;
+    padding-bottom: 50px;
+    color: #f5f5f5;
+    font-size: 1.7rem;
+}
+.swiper-url {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    line-height: 1.5;
+    color: #f5f5f5;
+    font-size: 1.7rem;
+}
+.swiper-url a {
+    color: #4dc0b2;
+}
+.swiper-url a:hover {
+    color: #59cfc1;
+}
+:root {
+    --swiper-navigation-color: #fff;
+    --swiper-pagination-color: #fff;
+}
+
+
+.skills {
+    width: 100%;
+    padding: 35px 0 50px;
+    background-color: #648b9c;
+    color: #fff;
+}
+.skills-box {
+    width: 100%;
+}
+.skills-box > .skill-item + .skill-item {
+    margin-top: 70px;
+}
+.skill-item {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #597C8B;
+}
+.skill-title {
+    display: inline-block;
+    margin: 20px auto;
+    font-size: 2.5rem;
+    font-family: "PT Sans", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+.english::before,
+.english::after {
+    display: inline-block;
+    margin: 0 20px;
+    font-family: "Font Awesome 5 Free";
+    content: '\f57d';
+    font-weight: 900;
+}
+.coding::before,
+.coding::after {
+    display: inline-block;
+    margin: 0 20px;
+    font-family: "Font Awesome 5 Free";
+    content: '\f121';
+    font-weight: 900;
+}
+.subskill-wrapper {
+    display: table;
+    width: 90%;
+    margin: 0 auto;
+}
+.subskill {
+    display: table-cell;
+    width: 50%;
+    padding: 10px 30px;
+    line-height: 2;
+    color: #f5f5f5;
+}
+.subskill-title {
+    display: inline-block;
+    font-size: 2rem;
+    border-bottom: 1px solid #73adf5;
+    margin-bottom: 15px;
+}
+
+
+
+.contact {
+    width: 100%;
+    padding: 35px 0 50px;
+    background-color: #597C8B;
+}
+.contact-text {
+    padding-top: 20px;
+    font-size: 1.8rem;
+    color: #f5f5f5;
+}
+.message {
+    display: inline-block;
+    margin: 30px auto 50px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #5d93d6;
+    text-decoration: none;
+    font-family: "PT Sans", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+.message:hover {
+    color: #fff;
+    background-color: #659fe6;
+}
+.ms-icon {
+    margin-right: 10px;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #444444;
+    color: #fff;
+}
+.icons {
+    width: 100%;
+    padding-top: 20px;
+}
+.account-icon {
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+    font-size: 3rem;
+}
+.account-icon li {
+    display: inline-block;
+}
+.account-icon a {
+    display: inline-block;
+    background-color: #444;
+    color: #fff;
+}
+.account-icon a:hover {
+    color: #e9e9e9;
+}
+.account-icon > a + a {
+    margin-left: 100px;
+}
+.linkedin::before {
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands";
+    content: '\f08c';
+}
+.github::before {
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands";
+    content: '\f092';
+}
+.line {
+    width: 90%;
+    height: 1px;
+    margin: 15px auto 20px;
+    background-color: #f5f5f5;
+}
+.copyright-wrapper {
+    width: 100%;
+    padding: 0 0 40px;
+    color: #fff;
+}
+.copyright {
+    margin: 10px 0 20px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: "PT Sans", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+
+
+
+@media (max-width: 1024px) {
+    .body-wrapper {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .header-wrapper {
+        top: 17%;
+        font-size: 3rem;
+    }
+    .maediary-content,
+    .swiper-content {
+        width: 80%;
+    }
+    .maediary-img,
+    .swiper-img {
+        width: 100%;
+        height: 250px;
+    }
+    .maediary-text-block,
+    .swiper-text-block {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .maediary-url,
+    .swiper-url {
+        width: 100%;
+    }
+    .subskill-wrapper,
+    .subskill {
+        display: block;
+    }
+    .subskill {
+        width: 100%;
+    }
+}
