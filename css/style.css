@@ -442,9 +442,20 @@ body {
 }
 @media (max-width: 480px) {
     .header {
-        background: url('../images/top_phone.jpg') no-repeat fixed;
         background-color: #444;
         height: 853px;
+        z-index: -2;
+    }
+    .header::before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 853px;
+        background: url('../images/top_phone.jpg') no-repeat fixed;
+        background-size: cover;
     }
     .header-wrapper {
         font-size: 2.5rem;
