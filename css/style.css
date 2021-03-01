@@ -442,7 +442,7 @@ body {
 }
 @media (max-width: 480px) {
     .header {
-        background-color: #444;
+        background-color: #222;
         height: 853px;
         z-index: -2;
     }
