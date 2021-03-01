@@ -443,6 +443,7 @@ body {
 @media (max-width: 480px) {
     .header {
         background: url('../images/top_phone.jpg') no-repeat fixed center bottom;
+        background-color: #444;
         height: 853px;
     }
     .header-wrapper {
