@@ -442,7 +442,7 @@ body {
 }
 @media (max-width: 480px) {
     .header {
-        background: url('../images/top_phone.jpg') no-repeat fixed center bottom;
+        background: url('../images/top_phone.jpg') no-repeat fixed;
         background-color: #444;
         height: 853px;
     }
